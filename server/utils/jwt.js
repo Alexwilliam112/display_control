@@ -1,13 +1,13 @@
-'use strict'
-const jwt = require('jsonwebtoken')
-const secretKey = process.env.JWT_KEY
+"use strict";
+const jwt = require("jsonwebtoken");
+const secretKey = process.env.JWT_KEY;
 
 module.exports = {
-    verifyToken: (token) => {
-        return jwt.verify(token, secretKey)
-    },
+  verifyToken: (token) => {
+    return jwt.verify(token, secretKey);
+  },
 
-    signToken: (payload) => {
-        return jwt.sign(payload, secretKey)
-    }
-}
+  signToken: (payload) => {
+    return jwt.sign(payload, secretKey);
+  },
+};

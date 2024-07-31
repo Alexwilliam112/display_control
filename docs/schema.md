@@ -57,3 +57,13 @@
   endDate: ISODate
 }
 ```
+
+## Users
+
+```
+{
+  _id: ObjectId
+  username: String
+  password: String
+}
+```

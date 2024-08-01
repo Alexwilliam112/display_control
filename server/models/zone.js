@@ -1,14 +1,16 @@
 const { getDB } = require("../config/mongo-connection");
 const { ObjectId } = require("mongodb");
 
-const collectionName = "Zones";
-const db = getDB();
-const collection = db.collection(collectionName);
+const getCollection = async () => {
+  const collection = await getDB().collection("Zones");
+  return collection;
+};
 
 module.exports = (() => {
   class Zone {
     static async getZones() {
       try {
+        const collection = await getCollection()
         const result = await collection.find().toArray();
         return result;
       } catch (error) {

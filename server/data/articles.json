@@ -1,3 +1,1967 @@
 [
-  
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940102",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940154",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940208",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940216",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940218",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940221",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940223",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940225",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940227",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940228",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940230",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940231",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940232",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940233",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRBELTS",
+    "subcategory": "MENBELT",
+    "article": "PM315940234",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM436500010",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940205",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940213",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM425940084",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM426500022",
+    "colors": [
+      "BLK",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM416500071",
+    "colors": [
+      "BLK",
+      "BRW",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940238",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM425940093",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM495940028",
+    "colors": [
+      "GRY",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM4165000229",
+    "colors": [
+      "SAN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM4165000238",
+    "colors": [
+      "SAN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM4265000099",
+    "colors": [
+      "SAN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM426500024",
+    "colors": [
+      "BLK",
+      "RED",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM495210002",
+    "colors": [
+      "BLK",
+      "RED",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM495940029",
+    "colors": [
+      "BLK",
+      "OLV"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940241",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM425940095",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940240",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940243",
+    "colors": [
+      "BLK",
+      "OLV"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM425940096",
+    "colors": [
+      "BLK",
+      "COG",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM495940030",
+    "colors": [
+      "BLK",
+      "COG",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM4265000222",
+    "colors": [
+      "BLK",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM415940247",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM425940091",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM416500074",
+    "colors": [
+      "DGRN",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM426500025",
+    "colors": [
+      "DGRN",
+      "GRY"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM465940030",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PDRWLTS",
+    "subcategory": "MENWALLET",
+    "article": "PM495940035",
+    "colors": [
+      "BLK",
+      "CLK",
+      "COG"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320185",
+    "colors": [
+      "BLK",
+      "DGY"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM225210223",
+    "colors": [
+      "BLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2252102061",
+    "colors": [
+      "DGY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320188",
+    "colors": [
+      "BLK",
+      "CLK",
+      "LGRY"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320189",
+    "colors": [
+      "BLK",
+      "DGY",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2452100261",
+    "colors": [
+      "DGY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320184",
+    "colors": [
+      "BLK",
+      "MLT",
+      "ORG"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320187",
+    "colors": [
+      "BLK",
+      "DBW",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226610002",
+    "colors": [
+      "WHT"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2263201221",
+    "colors": [
+      "MGRN",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM245210028",
+    "colors": [
+      "BLK",
+      "COG",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM225210222",
+    "colors": [
+      "BLK",
+      "COG",
+      "MLT",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM226320177",
+    "colors": [
+      "BLK",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2263201731",
+    "colors": [
+      "BLK",
+      "TEA"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM245210026",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM216320046",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2263200732",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM246320052",
+    "colors": [
+      "BLK",
+      "TEA"
+    ]
+  },
+  {
+    "category": "PMBAGS",
+    "subcategory": "MENBAGS",
+    "article": "PM2263200731",
+    "colors": [
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600140",
+    "colors": [
+      "BLK",
+      "BRW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380056",
+    "colors": [
+      "BLK",
+      "COG",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600139",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380059",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600143",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380060",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600144",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380061",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600147",
+    "colors": [
+      "BLK",
+      "DBW",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380063",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146380066",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600154",
+    "colors": [
+      "BLK",
+      "BRW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600160",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600155",
+    "colors": [
+      "BLK",
+      "CML",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600159",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENDRESS",
+    "article": "PM156380024",
+    "colors": [
+      "BLK",
+      "COG"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENDRESS",
+    "article": "PM156380025",
+    "colors": [
+      "BLK",
+      "LYLW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENDRESS",
+    "article": "PM156600004",
+    "colors": [
+      "BLK",
+      "CML",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110228",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110264",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM1651102642",
+    "colors": [
+      "LGRY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110286",
+    "colors": [
+      "MGRN",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110287",
+    "colors": [
+      "CML",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110288",
+    "colors": [
+      "NVY",
+      "SAN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165110290",
+    "colors": [
+      "BLK",
+      "ORG"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165980248",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM1659802482",
+    "colors": [
+      "BEG",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165980272",
+    "colors": [
+      "CML",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165980275",
+    "colors": [
+      "BLK",
+      "BRW",
+      "GRY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165980276",
+    "colors": [
+      "BLK",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380115",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110395",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM1851103051",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210194",
+    "colors": [
+      "BLK",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM1851103951",
+    "colors": [
+      "DGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210209",
+    "colors": [
+      "CML",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380144",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380149",
+    "colors": [
+      "BEG",
+      "BLK",
+      "BRW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110426",
+    "colors": [
+      "BLK",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380151",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210219",
+    "colors": [
+      "BLK",
+      "MGRN",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110421",
+    "colors": [
+      "BLK",
+      "GRY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210213",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110420",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210224",
+    "colors": [
+      "BLK",
+      "BLU"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210222",
+    "colors": [
+      "BLK",
+      "LYLW",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110431",
+    "colors": [
+      "BLK",
+      "BLU"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM1863801061",
+    "colors": [
+      "LYLW",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210226",
+    "colors": [
+      "CYN",
+      "GRN",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380153",
+    "colors": [
+      "BLK",
+      "MGRN",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM1762101641",
+    "colors": [
+      "CYN",
+      "ORG"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176680001",
+    "colors": [
+      "BEG",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110432",
+    "colors": [
+      "BEG",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM1762101832",
+    "colors": [
+      "BLK",
+      "NVY"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110430",
+    "colors": [
+      "BLK",
+      "COG",
+      "ORG"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM1762101931",
+    "colors": [
+      "DGY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM186380155",
+    "colors": [
+      "BLK",
+      "CLK",
+      "COG"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSPORT",
+    "article": "PM176210225",
+    "colors": [
+      "BLK",
+      "CLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENFORMAL",
+    "article": "PM146600158",
+    "colors": [
+      "BLK",
+      "DBW"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSMART",
+    "article": "PM165980280",
+    "colors": [
+      "BLK",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PMSHOES",
+    "subcategory": "MENSANDAL",
+    "article": "PM185110428",
+    "colors": [
+      "BLK",
+      "CML"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2752100932",
+    "colors": [
+      "BLK",
+      "MGRN"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW236390015",
+    "colors": [
+      "BLK",
+      "BRW",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW246390020",
+    "colors": [
+      "BLK",
+      "BRW"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276390105",
+    "colors": [
+      "BLK",
+      "BRW",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276610070",
+    "colors": [
+      "BLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276610071",
+    "colors": [
+      "BLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW245210031",
+    "colors": [
+      "BLK",
+      "MLT",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW275210150",
+    "colors": [
+      "BLK",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW245210030",
+    "colors": [
+      "COG",
+      "LBLU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276390057",
+    "colors": [
+      "BLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW215210015",
+    "colors": [
+      "MLT",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276390101",
+    "colors": [
+      "BLK",
+      "LPNK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2452100321",
+    "colors": [
+      "DBW"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2766100653",
+    "colors": [
+      "DBW"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW215210016",
+    "colors": [
+      "BLK",
+      "MLT",
+      "SLV"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW235210015",
+    "colors": [
+      "BLK",
+      "MLT",
+      "SLV"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW275210151",
+    "colors": [
+      "BEG",
+      "BLK",
+      "CYN",
+      "PNK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276610065",
+    "colors": [
+      "BLK",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW245210032",
+    "colors": [
+      "BEG",
+      "BLK",
+      "CYN",
+      "PNK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2766100652",
+    "colors": [
+      "BLK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276390095",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW246390014",
+    "colors": [
+      "BLK",
+      "FCH",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2766100261",
+    "colors": [
+      "BLK",
+      "FCH",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW235060016",
+    "colors": [
+      "BLK",
+      "NUD",
+      "SBLU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2750600611",
+    "colors": [
+      "BLK",
+      "MAU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW275060093",
+    "colors": [
+      "BLK",
+      "CLK",
+      "SBLU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW275060094",
+    "colors": [
+      "BLK",
+      "CLK",
+      "SBLU"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW2763900573",
+    "colors": [
+      "MAU",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWBAGS",
+    "subcategory": "WMNBAGS",
+    "article": "PW276610041",
+    "colors": [
+      "BLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNWDGS",
+    "article": "PW145490012",
+    "colors": [
+      "BEG",
+      "CML"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126680024",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680021",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW1562100741",
+    "colors": [
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680035",
+    "colors": [
+      "BLK",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW1562100743",
+    "colors": [
+      "BEG"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW156210079",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW1267600531",
+    "colors": [
+      "FCH",
+      "GRN"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNWDGS",
+    "article": "PW146680004",
+    "colors": [
+      "BLK",
+      "FCH",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126760050",
+    "colors": [
+      "BLK",
+      "SLV",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166760013",
+    "colors": [
+      "BLK",
+      "SLV",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126680042",
+    "colors": [
+      "BLK",
+      "CLK",
+      "NUD",
+      "SBLU"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126760049",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126760054",
+    "colors": [
+      "BLK",
+      "NUD",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW165490192",
+    "colors": [
+      "CLK",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680037",
+    "colors": [
+      "NUD",
+      "SBLU"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680038",
+    "colors": [
+      "BLK",
+      "NUD",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW1254802422",
+    "colors": [
+      "GLD",
+      "SLV"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW156210081",
+    "colors": [
+      "GRN",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW1562100541",
+    "colors": [
+      "GRN",
+      "LPNK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166380014",
+    "colors": [
+      "BLK",
+      "CLK",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166760015",
+    "colors": [
+      "BLK",
+      "GRN",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166760016",
+    "colors": [
+      "BLK",
+      "FCH"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126760056",
+    "colors": [
+      "BLK",
+      "GRN",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNWDGS",
+    "article": "PW146050041",
+    "colors": [
+      "BLK",
+      "GRN",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW1659800292",
+    "colors": [
+      "PNK",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680039",
+    "colors": [
+      "BLK",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW1663000742",
+    "colors": [
+      "GLD",
+      "SLV"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW1266800246",
+    "colors": [
+      "CYN",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW1562100681",
+    "colors": [
+      "PNK",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW165110068",
+    "colors": [
+      "BLK",
+      "CLK",
+      "CYN",
+      "PNK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166380013",
+    "colors": [
+      "BEG",
+      "BLK",
+      "CYN",
+      "PNK"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNSPORTS",
+    "article": "PW156210080",
+    "colors": [
+      "BLK",
+      "CLK",
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126740011",
+    "colors": [
+      "BRW",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNHEELS",
+    "article": "PW126760051",
+    "colors": [
+      "BLK",
+      "NUD",
+      "RED"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNWDGS",
+    "article": "PW146680005",
+    "colors": [
+      "BLK",
+      "BRW",
+      "TRQ"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNWDGS",
+    "article": "PW146680006",
+    "colors": [
+      "BLK",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW166680043",
+    "colors": [
+      "BLK",
+      "TRQ",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWSHOES",
+    "subcategory": "WMNFLAT",
+    "article": "PW165110067",
+    "colors": [
+      "BLK",
+      "NUD",
+      "RED"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW495210011",
+    "colors": [
+      "BLK",
+      "MLT",
+      "MLT",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW495940004",
+    "colors": [
+      "BEG",
+      "BLK",
+      "CYN",
+      "PNK"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW415940088",
+    "colors": [
+      "BLK",
+      "NUD",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW495940005",
+    "colors": [
+      "BLK",
+      "NUD",
+      "YLW"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW466500012",
+    "colors": [
+      "BLK",
+      "FCH"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW415940087",
+    "colors": [
+      "BLK",
+      "GRN",
+      "VLT",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW435940019",
+    "colors": [
+      "BLK",
+      "GRN",
+      "VLT",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW4359400181",
+    "colors": [
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW4663900011",
+    "colors": [
+      "MLT"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW435940018",
+    "colors": [
+      "BLK",
+      "CLK"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW415940086",
+    "colors": [
+      "BLK",
+      "BRW"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW466390001",
+    "colors": [
+      "BLK",
+      "CLK",
+      "RED"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW4265000091",
+    "colors": [
+      "OLV"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW4665000111",
+    "colors": [
+      "OLV"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW426500010",
+    "colors": [
+      "BLK",
+      "CLK",
+      "NUD"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW446500014",
+    "colors": [
+      "CLK",
+      "MLT",
+      "NUD",
+      "PRL"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW4665000122",
+    "colors": [
+      "BLK",
+      "NUD",
+      "PRL"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW466500016",
+    "colors": [
+      "BLK",
+      "CLK",
+      "PRL"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW425940028",
+    "colors": [
+      "BLK",
+      "NVY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW415940084",
+    "colors": [
+      "BLK",
+      "NVY",
+      "TAU"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW426500009",
+    "colors": [
+      "BLK",
+      "FCH",
+      "NUD",
+      "WHT"
+    ]
+  },
+  {
+    "category": "PWWLTS",
+    "subcategory": "WMNWALLET",
+    "article": "PW466500011",
+    "colors": [
+      "BLK",
+      "FCH",
+      "GLD",
+      "WHT"
+    ]
+  }
 ]

@@ -20,7 +20,7 @@ async function connect() {
 
 function getDB() {
   if (!database) {
-    throw new Error("Database not connected. Please call connect first.");
+    throw new Error("Database not connected");
   }
   return database;
 }

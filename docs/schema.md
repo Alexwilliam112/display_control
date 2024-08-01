@@ -31,7 +31,7 @@
   category: String
   subcategory: String
   article: String
-  Colors : [String]
+  colors : [String]
 }
 ```
 

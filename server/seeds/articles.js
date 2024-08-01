@@ -1,9 +1,9 @@
 require("dotenv").config();
 const bcrypt = require("../utils/bcrypt");
-const usersData = require("../data/articles.json");
+const articleData = require("../data/articles.json");
 const { getDB, connect } = require("../config/mongo-connection");
 
-const seedArticles = async () => {
+const seedZones = async () => {
   try {
     await connect();
 
@@ -11,12 +11,7 @@ const seedArticles = async () => {
     const db = getDB();
     const collection = db.collection(collectionName);
 
-    const hashedUsers = usersData.map((user) => {
-      const hashedPassword = bcrypt.hash(user.password);
-      return { ...user, password: hashedPassword };
-    });
-
-    await collection.insertMany(hashedUsers);
+    await collection.insertMany(articleData);
     console.log("Seeded Collection: Articles");
     return;
   } catch (error) {
@@ -24,4 +19,4 @@ const seedArticles = async () => {
   }
 };
 
-seedArticles();
+seedZones();

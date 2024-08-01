@@ -1,3 +1,17 @@
 [
-  
+  {
+    "zoneName": "Wall Men Casual"
+  },
+  {
+    "zoneName": "Wall Men Sport"
+  },
+  {
+    "zoneName": "Wall Men Formal"
+  },
+  {
+    "zoneName": "Wall Women Casual"
+  },
+  {
+    "zoneName": "Wall Women Formal"
+  }
 ]

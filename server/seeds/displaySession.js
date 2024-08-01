@@ -1,21 +1,20 @@
 require("dotenv").config();
-const bcrypt = require("../utils/bcrypt");
-const zoneData = require("../data/zones.json");
+const displayData = require("../data/displaySessions.json");
 const { getDB, connect } = require("../config/mongo-connection");
 
 const seedZones = async () => {
   try {
     await connect();
 
-    const collectionName = "Zones";
+    const collectionName = "DisplaySessions";
     const db = getDB();
     const collection = db.collection(collectionName);
 
-    await collection.insertMany(zoneData);
-    console.log("Seeded Collection: Zones");
+    await collection.insertMany(displayData);
+    console.log("Seeded Collection: DisplaySessions");
     return;
   } catch (error) {
-    console.error("Error seeding Zones:", error);
+    console.error("Error seeding DisplaySessions", error);
   }
 };
 

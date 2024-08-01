@@ -34,20 +34,21 @@ opt REQUEST: UPDATE DISPLAY SESSION
     User ->> Client: Save Article Display
     Client ->> Server: REQ: DisplaySession update
 
-    Server->>Database: QUERY READ DisplaySessions WHERE endDate: NULL
+    Server->>Database: QUERY READ DisplaySessions WHERE endDate: NULL (DisplaySession.getActive)
     Database-->>Server: Acknowledged: "ActiveDisplaySessions"
 
     Server->>Server: FILTER OUT Article-Color-Zone WITH displayed=TRUE AND DisplaySession endDate: NULL
 
     Server->>Server: FILTER AND GROUP Article-Color-Zone WITH displayed=TRUE AND not included in "ActiveDisplaySessions"
-    Server->>Database: INSERT NEW DOCUMENT to DisplaySessions WITH endDate: NULL
+    Server->>Database: INSERT NEW DOCUMENT to DisplaySessions WITH endDate: NULL (DisplaySession.openDisplay)
     Database-->>Server: Acknowledged
 
     Server->>Server: FILTER AND GROUP Article-Color-Zone WITH displayed=FALSE AND DisplaySession endDate: NULL
-    Server->>Database: UPDATE DOCUMENT to DisplaySessions WHERE Article-Color-Zone WITH endDate: NOW
+    Server->>Database: UPDATE DOCUMENT to DisplaySessions WHERE Article-Color-Zone WITH endDate: NOW (DisplaySession.closeDisplay)
     Database-->>Server: Acknowledged
 
     Server-->>Client: RES: Operation Complete
     Client->>User: Updates Saved Notification
+
 end
 ```

@@ -84,8 +84,8 @@ module.exports = {
       SearchDisplay: async (_, { input }, ctx) => {
         try {
           await ctx.auth();
-          let { keyword } = input;
-          if(!keyword) keyword = "";
+          const { keyword } = input;
+          if(!keyword) keyword
           const result = await Article.search(keyword);
 
           return { activeDisplay: result };

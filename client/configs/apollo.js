@@ -10,7 +10,7 @@ if (__DEV__) {
 }
 
 const httpLink = createHttpLink({
-  uri: "https://9pn9pn4q-3007.asse.devtunnels.ms/",
+  uri: "https://9pn9pn4q-3004.asse.devtunnels.ms/",
 });
 
 const authLink = setContext(async (_, { headers }) => {
@@ -30,3 +30,6 @@ const client = new ApolloClient({
 });
 
 export default client;
+export async function invalidateCache() {
+  await client.clearStore();
+}

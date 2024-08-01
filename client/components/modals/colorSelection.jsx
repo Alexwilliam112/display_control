@@ -2,7 +2,18 @@ import * as React from "react";
 import { Image, Text, View, Pressable, Modal } from "react-native";
 import styles from "../../stylesheets/colorSelectStyles";
 
-export default ColorSelection = ({ modalVisible, setModalVisible, colors }) => {
+export default ColorSelection = ({
+  modalVisible,
+  setModalVisible,
+  colors,
+  zone,
+  articleId,
+  updateColorDisplayed,
+}) => {
+  const handleColorClick = (color) => {
+    updateColorDisplayed(articleId, zone, color.color, !color.displayed);
+  };
+
   return (
     <Modal
       animationType=""
@@ -32,6 +43,9 @@ export default ColorSelection = ({ modalVisible, setModalVisible, colors }) => {
                 <Pressable
                   key={index}
                   style={[styles.ckMallPondokIndahParent, styles.parentFlexBox]}
+                  onPress={() => {
+                    handleColorClick(colorData);
+                  }}
                 >
                   <Text style={styles.ckMallPondok}>{colorData.color}</Text>
                   {colorData.displayed ? (
@@ -51,9 +65,12 @@ export default ColorSelection = ({ modalVisible, setModalVisible, colors }) => {
             <View style={[styles.defaultButtons, styles.defaultBorder]}>
               <Text style={[styles.remove, styles.removeTypo]}>REMOVE</Text>
             </View>
-            <View style={[styles.defaultButtons1, styles.defaultBorder]}>
-              <Text style={[styles.confirm, styles.removeTypo]}>CONFIRM</Text>
-            </View>
+            <Pressable
+              style={[styles.defaultButtons1, styles.defaultBorder]}
+              onPress={() => {setModalVisible(false)}}
+            >
+              <Text style={[styles.confirm, styles.removeTypo]}>CLOSE</Text>
+            </Pressable>
           </View>
         </View>
       </View>

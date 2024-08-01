@@ -17,19 +17,115 @@ import {
   GET_ALL_DISPLAY,
   GET_ZONES,
   SEARCH_DISPLAY,
+  UPDATE_DISPLAY,
 } from "../queries/articles";
 import ArticleCard from "../components/card";
 import ColorSelection from "../components/modals/colorSelection";
+import LoadingModal from "../components/modals/loadingModal";
+import cleanupWorker from "../utils/cleanups";
+import { invalidateCache } from "../configs/apollo";
 
 export default ArticlePage = ({ navigation }) => {
+  const [articles, setArticles] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [zone, setZone] = useState(null);
   const [items, setItems] = useState([]);
 
   //modal settings
+  const [loadingSubmit, setLoadingSubmit] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState("");
   const [colors, setColors] = useState([]);
+
+  const [fnDispatch] = useMutation(UPDATE_DISPLAY, {
+    awaitRefetchQueries: true,
+    onCompleted: () => {
+      console.log("COMPLETED ========");
+      invalidateCache();
+      navigation.navigate("home");
+    },
+
+    onError: (error) => {
+      console.log(error);
+    },
+  });
+
+  const setLoadingSubmitAsync = () => {
+    return new Promise((resolve) => {
+      setLoadingSubmit(true);
+      // Use a setTimeout to give time for the state to update
+      setTimeout(() => {
+        resolve();
+      }, 2000);
+    });
+  };
+
+  const handleSubmit = async () => {
+    console.log("STARTING SUBMISSION =============");
+
+    try {
+      await setLoadingSubmitAsync();
+      console.log("CLEANING UP =============");
+      const submission = await cleanupWorker(articles);
+
+      console.log("SUBMITTING =============");
+      await fnDispatch({
+        variables: {
+          input: {
+            data: submission,
+          },
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoadingSubmit(false);
+    }
+  };
+
+  const updateColorDisplayed = (articleId, zoneName, colorName, displayed) => {
+    const updatedArticles = articles.map((article) => {
+      if (article.article === articleId) {
+        return {
+          ...article,
+          zones: article.zones.map((zone) => {
+            if (zone.zone === zoneName) {
+              // Update the colors array within the zone
+              const updatedColors = zone.colors.map((color) => {
+                if (color.color === colorName) {
+                  return { ...color, displayed };
+                }
+                return color;
+              });
+
+              setColors(updatedColors);
+              // Determine the zone's displayed status
+              let zoneDisplayed;
+              if (displayed) {
+                // If setting color to true, set zone displayed to true
+                zoneDisplayed = true;
+              } else {
+                // If setting color to false, check other colors in the zone
+                zoneDisplayed = updatedColors.some((color) => color.displayed);
+              }
+
+              return {
+                ...zone,
+                colors: updatedColors,
+                displayed: zoneDisplayed,
+              };
+            }
+            return zone;
+          }),
+        };
+      }
+      return article;
+    });
+
+    setArticles(updatedArticles);
+    console.log("Updated Articles");
+  };
 
   let { loading, error, data } = useQuery(GET_ALL_DISPLAY);
   const {
@@ -37,8 +133,6 @@ export default ArticlePage = ({ navigation }) => {
     error: zoneError,
     data: zoneData,
   } = useQuery(GET_ZONES);
-
-  const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     if (zoneData) {
@@ -90,12 +184,7 @@ export default ArticlePage = ({ navigation }) => {
           />
         </Pressable>
         <Text style={styles.displayControl}>Display Control</Text>
-        <Pressable
-          style={styles.buttonContainer}
-          onPress={() => {
-            navigation.navigate("home");
-          }}
-        >
+        <Pressable style={styles.buttonContainer} onPress={handleSubmit}>
           <Image
             style={styles.headerChild}
             resizeMode="cover"
@@ -108,7 +197,11 @@ export default ArticlePage = ({ navigation }) => {
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
           colors={colors}
+          zone={zone}
+          articleId={selectedArticle}
+          updateColorDisplayed={updateColorDisplayed}
         />
+        <LoadingModal loadingSubmit={loadingSubmit} />
 
         <DropDownPicker
           open={open}
@@ -151,6 +244,7 @@ export default ArticlePage = ({ navigation }) => {
                 data={item}
                 setColors={setColors}
                 zone={zone}
+                setSelectedArticle={setSelectedArticle}
               />
             )}
             ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}

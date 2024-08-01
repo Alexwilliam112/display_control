@@ -1,6 +1,20 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
+  flatlist: {
+    alignSelf: "stretch",
+    flex: 1,
+    width: "100%",
+    height: "100%",
+    flexDirection: "column",
+  },
+  itemSeparator: {
+    height: 5,
+  },
+  columnWrapper: {
+    justifyContent: 'space-between',
+    marginBottom: 5,
+  },
   parentShadowBox: {
     padding: 15,
     borderTopWidth: 0.5,
@@ -33,10 +47,6 @@ export default StyleSheet.create({
     fontSize: 13,
     fontWeight: "400",
     textAlign: "left",
-  },
-  parentSpaceBlock: {
-    paddingHorizontal: 5,
-    flexDirection: "row",
   },
   switchTypo: {
     color: "#000",
@@ -141,8 +151,7 @@ export default StyleSheet.create({
     fontWeight: "500",
     fontSize: 14,
   },
-  switch: {
-  },
+  switch: {},
   vectorIcon: {
     width: 20,
     height: 14,
@@ -153,11 +162,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   showingAllArticleParent: {
-    paddingTop: 15,
-    marginTop: 15,
-    alignSelf: "stretch",
-    justifyContent: "space-between",
-    paddingHorizontal: 5,
+    height: 15,
   },
   contentBoardChild: {
     height: 294,
@@ -175,6 +180,9 @@ export default StyleSheet.create({
     paddingTop: 20,
     alignSelf: "stretch",
     flex: 1,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
   },
   mainPagefinal: {
     backgroundColor: "#000",

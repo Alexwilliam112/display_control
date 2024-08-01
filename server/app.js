@@ -10,10 +10,11 @@ const { connect, getDB } = require("./config/mongo-connection");
 const { authentication } = require("./middlewares/authentication");
 const { userTypes, userResolvers } = require("./schemas/user");
 const { displayTypes, displayResolvers } = require("./schemas/display");
+const { zoneTypes, zoneResolvers } = require("./schemas/zones");
 
 const server = new ApolloServer({
-  typeDefs: [userTypes, displayTypes],
-  resolvers: [userResolvers, displayResolvers],
+  typeDefs: [userTypes, displayTypes, zoneTypes],
+  resolvers: [userResolvers, displayResolvers, zoneResolvers],
   formatError: (err) => {
     console.error(err);
     return err;

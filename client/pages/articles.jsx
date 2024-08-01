@@ -1,20 +1,68 @@
 import styles from "../stylesheets/articleStyles";
 import * as React from "react";
-import { useState } from "react";
-import { Image, Text, View, Pressable, TextInput } from "react-native";
+import { useState, useEffect } from "react";
+import {
+  Image,
+  Text,
+  View,
+  Pressable,
+  TextInput,
+  FlatList,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import DropDownPicker from "react-native-dropdown-picker";
+import { useMutation, useQuery } from "@apollo/client";
+
+import { GET_ALL_DISPLAY, GET_ZONES } from "../queries/articles";
+import ArticleCard from "../components/card";
+import ColorSelection from "../components/modals/colorSelection";
 
 export default ArticlePage = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
-  const [items, setItems] = useState([
-    { label: "Java", value: "java" },
-    { label: "JavaScript", value: "javascript" },
-    { label: "Python", value: "python" },
-    { label: "C++", value: "cpp" },
-  ]);
+  const [items, setItems] = useState([]);
+
+  let { loading, error, data } = useQuery(GET_ALL_DISPLAY);
+  const {
+    loading: zoneLoading,
+    error: zoneError,
+    data: zoneData,
+  } = useQuery(GET_ZONES);
+
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    if (zoneData) {
+      const zoneDatas = zoneData.getZones.zones;
+      const transformedItems = zoneDatas.map(item => ({
+        label: item.zoneName,
+        value: item.zoneName
+      }));
+      setItems(transformedItems);
+    }
+    
+  }, [zoneData]);
+
+  useEffect(() => {
+    if (data) {
+      const articleData = data.GetAllDisplay.activeDisplay;
+      setArticles(articleData);
+    }
+  }, [data]);
+
+  //query
+  async function searchArticle() {
+    const resp = await searchDispatch({
+      variables: { input: { nameOrUsername: searchChar } },
+    });
+
+    setArticles(resp.data.GetAllDisplay.activeDisplay);
+  }
+
+  //modal settings
+  const [modalVisible, setModalVisible] = useState(false);
+  const [colors, setColors] = useState([]);
 
   return (
     <SafeAreaView style={styles.mainPagefinal}>
@@ -46,6 +94,11 @@ export default ArticlePage = ({ navigation }) => {
         </Pressable>
       </View>
       <View style={styles.contentBoard}>
+        <ColorSelection
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+        />
+
         <DropDownPicker
           open={open}
           value={value}
@@ -69,20 +122,25 @@ export default ArticlePage = ({ navigation }) => {
           onChangeText={setSearchQuery}
         />
 
-        <View style={[styles.showingAllArticleParent, styles.parentSpaceBlock]}>
-          <Text style={[styles.showingAllArticle, styles.switchTypo]}>
-            Showing All Article
-          </Text>
-          <View style={[styles.switchParent, styles.parentSpaceBlock]}>
-            <Text style={[styles.switch, styles.switchTypo]}>switch</Text>
-            <Image
-              style={styles.vectorIcon}
-              resizeMode="cover"
-              source="Vector.png"
-            />
-          </View>
-        </View>
-        <View style={[styles.contentBoardChild, styles.parentSpaceBlock1]} />
+        <View style={styles.showingAllArticleParent}></View>
+
+        {loading ? (
+          <Text>Loading...</Text>
+        ) : error ? (
+          <Text>ERROR FETCHING DATA</Text>
+        ) : (
+          <FlatList
+            style={styles.flatlist}
+            data={articles}
+            keyExtractor={(item) => item.article}
+            numColumns={2}
+            renderItem={({ item }) => (
+              <ArticleCard setModalVisible={setModalVisible} data={item} />
+            )}
+            ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
+            columnWrapperStyle={styles.columnWrapper}
+          />
+        )}
       </View>
     </SafeAreaView>
   );

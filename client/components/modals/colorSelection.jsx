@@ -2,7 +2,7 @@ import * as React from "react";
 import { Image, Text, View, Pressable, Modal } from "react-native";
 import styles from "../../stylesheets/colorSelectStyles";
 
-export default ColorSelection = ({ modalVisible, setModalVisible }) => {
+export default ColorSelection = ({ modalVisible, setModalVisible, colors }) => {
   return (
     <Modal
       animationType=""
@@ -27,18 +27,25 @@ export default ColorSelection = ({ modalVisible, setModalVisible }) => {
             </Pressable>
           </View>
           <View style={styles.frameParent}>
-            
-            <Pressable
-              style={[styles.ckMallPondokIndahParent, styles.parentFlexBox]}
-            >
-              <Text style={styles.ckMallPondok}>Select Color</Text>
-              <Image
-                style={styles.checkIcon}
-                resizeMode="cover"
-                source={require("../../assets/checkIcon.png")}
-              />
-            </Pressable>
-
+            {colors.map((colorData, index) => {
+              return (
+                <Pressable
+                  key={index}
+                  style={[styles.ckMallPondokIndahParent, styles.parentFlexBox]}
+                >
+                  <Text style={styles.ckMallPondok}>{colorData.color}</Text>
+                  {colorData.displayed ? (
+                    <Image
+                      style={styles.checkIcon}
+                      resizeMode="cover"
+                      source={require("../../assets/checkIcon.png")}
+                    />
+                  ) : (
+                    <></>
+                  )}
+                </Pressable>
+              );
+            })}
           </View>
           <View style={[styles.defaultButtonsParent, styles.parentFlexBox]}>
             <View style={[styles.defaultButtons, styles.defaultBorder]}>

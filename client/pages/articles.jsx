@@ -20,8 +20,12 @@ import ColorSelection from "../components/modals/colorSelection";
 export default ArticlePage = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(null);
+  const [zone, setZone] = useState(null);
   const [items, setItems] = useState([]);
+
+  //modal settings
+  const [modalVisible, setModalVisible] = useState(false);
+  const [colors, setColors] = useState([]);
 
   let { loading, error, data } = useQuery(GET_ALL_DISPLAY);
   const {
@@ -35,13 +39,13 @@ export default ArticlePage = ({ navigation }) => {
   useEffect(() => {
     if (zoneData) {
       const zoneDatas = zoneData.getZones.zones;
-      const transformedItems = zoneDatas.map(item => ({
+      setZone(zoneDatas[0].zoneName);
+      const transformedItems = zoneDatas.map((item) => ({
         label: item.zoneName,
-        value: item.zoneName
+        value: item.zoneName,
       }));
       setItems(transformedItems);
     }
-    
   }, [zoneData]);
 
   useEffect(() => {
@@ -59,10 +63,6 @@ export default ArticlePage = ({ navigation }) => {
 
     setArticles(resp.data.GetAllDisplay.activeDisplay);
   }
-
-  //modal settings
-  const [modalVisible, setModalVisible] = useState(false);
-  const [colors, setColors] = useState([]);
 
   return (
     <SafeAreaView style={styles.mainPagefinal}>
@@ -97,14 +97,15 @@ export default ArticlePage = ({ navigation }) => {
         <ColorSelection
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
+          colors={colors}
         />
 
         <DropDownPicker
           open={open}
-          value={value}
+          value={zone}
           items={items}
           setOpen={setOpen}
-          setValue={setValue}
+          setValue={setZone}
           setItems={setItems}
           style={[styles.frameParentdd, styles.parentSpaceBlock1]}
           dropDownContainerStyle={{
@@ -135,7 +136,12 @@ export default ArticlePage = ({ navigation }) => {
             keyExtractor={(item) => item.article}
             numColumns={2}
             renderItem={({ item }) => (
-              <ArticleCard setModalVisible={setModalVisible} data={item} />
+              <ArticleCard
+                setModalVisible={setModalVisible}
+                data={item}
+                setColors={setColors}
+                zone={zone}
+              />
             )}
             ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
             columnWrapperStyle={styles.columnWrapper}

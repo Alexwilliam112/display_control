@@ -2,12 +2,20 @@ import * as React from "react";
 import { Image, Text, Pressable } from "react-native";
 import styles from "../stylesheets/cardStyles";
 
-export default ArticleCard = ({ setModalVisible, data }) => {
+export default ArticleCard = ({ setModalVisible, data, setColors, zone }) => {
+  function handleClick() {
+    const zoneColors = data.zones.find((el) => {
+      return el.zone === zone;
+    })
+    setColors(zoneColors.colors);
+    setModalVisible(true);
+  }
+
   return (
     <Pressable
       style={styles.cardContainer}
       onPress={() => {
-        setModalVisible(true);
+        handleClick();
       }}
     >
       <Image

@@ -11,9 +11,13 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import DropDownPicker from "react-native-dropdown-picker";
-import { useMutation, useQuery } from "@apollo/client";
+import { useMutation, useQuery, useLazyQuery } from "@apollo/client";
 
-import { GET_ALL_DISPLAY, GET_ZONES } from "../queries/articles";
+import {
+  GET_ALL_DISPLAY,
+  GET_ZONES,
+  SEARCH_DISPLAY,
+} from "../queries/articles";
 import ArticleCard from "../components/card";
 import ColorSelection from "../components/modals/colorSelection";
 
@@ -56,13 +60,19 @@ export default ArticlePage = ({ navigation }) => {
   }, [data]);
 
   //query
-  async function searchArticle() {
+  const [searchDispatch] = useLazyQuery(SEARCH_DISPLAY);
+
+  async function handleSearch() {
     const resp = await searchDispatch({
-      variables: { input: { nameOrUsername: searchChar } },
+      variables: { input: { keyword: searchQuery } },
     });
 
-    setArticles(resp.data.GetAllDisplay.activeDisplay);
+    setArticles(resp.data.SearchDisplay.activeDisplay);
   }
+
+  useEffect(() => {
+    handleSearch();
+  }, [searchQuery]);
 
   return (
     <SafeAreaView style={styles.mainPagefinal}>

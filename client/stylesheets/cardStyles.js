@@ -28,6 +28,7 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: "space-between",
     width: "100%",
+    maxWidth: 183,
     height: 155,
     alignItems: "center",
     paddingHorizontal: 15,

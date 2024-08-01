@@ -20,6 +20,26 @@ export const GET_ALL_DISPLAY = gql`
   }
 `;
 
+export const SEARCH_DISPLAY = gql`
+  query SearchDisplay($input: SearchInput) {
+    SearchDisplay(input: $input) {
+      activeDisplay {
+        category
+        subcategory
+        article
+        zones {
+          zone
+          displayed
+          colors {
+            color
+            displayed
+          }
+        }
+      }
+    }
+  }
+`;
+
 export const UPDATE_DISPLAY = gql`
   mutation UpdateDisplay($input: UpdateInput) {
     UpdateDisplay(input: $input) {

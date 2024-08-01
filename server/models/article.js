@@ -12,7 +12,117 @@ module.exports = (() => {
         const collection = await getCollection();
 
         const result = await collection
-        .aggregate([
+          .aggregate([
+            {
+              $lookup: {
+                from: "Zones",
+                pipeline: [],
+                as: "allZones",
+              },
+            },
+            {
+              $unwind: "$allZones",
+            },
+            {
+              $unwind: "$colors",
+            },
+            {
+              $lookup: {
+                from: "DisplaySessions",
+                let: {
+                  article: "$article",
+                  color: "$colors",
+                  zone: "$allZones.zoneName",
+                },
+                pipeline: [
+                  {
+                    $match: {
+                      $expr: {
+                        $and: [
+                          { $eq: ["$article", "$$article"] },
+                          { $eq: ["$color", "$$color"] },
+                          { $eq: ["$zone", "$$zone"] },
+                          { $eq: ["$endDate", null] },
+                        ],
+                      },
+                    },
+                  },
+                ],
+                as: "activeSessions",
+              },
+            },
+            {
+              $addFields: {
+                displayed: {
+                  $cond: {
+                    if: { $gt: [{ $size: "$activeSessions" }, 0] },
+                    then: true,
+                    else: false,
+                  },
+                },
+              },
+            },
+            {
+              $group: {
+                _id: {
+                  category: "$category",
+                  subcategory: "$subcategory",
+                  article: "$article",
+                  zone: "$allZones.zoneName",
+                },
+                colors: {
+                  $push: {
+                    color: "$colors",
+                    displayed: "$displayed",
+                  },
+                },
+              },
+            },
+            {
+              $group: {
+                _id: {
+                  category: "$_id.category",
+                  subcategory: "$_id.subcategory",
+                  article: "$_id.article",
+                },
+                zones: {
+                  $push: {
+                    zone: "$_id.zone",
+                    displayed: { $max: "$colors.displayed" },
+                    colors: "$colors",
+                  },
+                },
+              },
+            },
+            {
+              $project: {
+                _id: 0,
+                category: "$_id.category",
+                subcategory: "$_id.subcategory",
+                article: "$_id.article",
+                zones: 1,
+              },
+            },
+          ])
+          .toArray();
+
+        return result;
+      } catch (error) {
+        throw error;
+      }
+    }
+
+    static async search(searchQuery) {
+      try {
+        const collection = await getCollection();
+
+        const pipeline = [
+          // Search for articles
+          {
+            $match: {
+              article: { $regex: searchQuery, $options: "i" }, // 'i' for case-insensitive
+            },
+          },
           {
             $lookup: {
               from: "Zones",
@@ -103,9 +213,9 @@ module.exports = (() => {
               zones: 1,
             },
           },
-        ])
-        .toArray();
+        ];
 
+        const result = await collection.aggregate(pipeline).toArray();
         return result;
       } catch (error) {
         throw error;

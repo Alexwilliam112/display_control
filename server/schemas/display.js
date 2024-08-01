@@ -54,8 +54,13 @@ module.exports = {
       data: [DisplayInput]
     }
 
+    input SearchInput {
+      keyword: String
+    }
+
     type Query {
       GetAllDisplay: AllDisplayData
+      SearchDisplay(input: SearchInput): AllDisplayData
     }
 
     type Mutation {
@@ -69,6 +74,19 @@ module.exports = {
         try {
           await ctx.auth();
           const result = await Article.getAll();
+
+          return { activeDisplay: result };
+        } catch (error) {
+          throw new GraphQLError(error.message);
+        }
+      },
+
+      SearchDisplay: async (_, { input }, ctx) => {
+        try {
+          await ctx.auth();
+          let { keyword } = input;
+          if(!keyword) keyword = "";
+          const result = await Article.search(keyword);
 
           return { activeDisplay: result };
         } catch (error) {

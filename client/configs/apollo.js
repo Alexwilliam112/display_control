@@ -10,7 +10,7 @@ if (__DEV__) {
 }
 
 const httpLink = createHttpLink({
-  uri: "https://9pn9pn4q-3004.asse.devtunnels.ms/",
+  uri: "https://vmpedro.alexanderwil.xyz",
 });
 
 const authLink = setContext(async (_, { headers }) => {

@@ -9,9 +9,15 @@ export default ColorSelection = ({
   zone,
   articleId,
   updateColorDisplayed,
+  setAllColorsDisplayedToFalse,
 }) => {
   const handleColorClick = (color) => {
     updateColorDisplayed(articleId, zone, color.color, !color.displayed);
+  };
+
+  const handleRemove = () => {
+    setAllColorsDisplayedToFalse(articleId, zone);
+    setModalVisible(false);
   };
 
   return (
@@ -62,12 +68,19 @@ export default ColorSelection = ({
             })}
           </View>
           <View style={[styles.defaultButtonsParent, styles.parentFlexBox]}>
-            <View style={[styles.defaultButtons, styles.defaultBorder]}>
+            <Pressable
+              style={[styles.defaultButtons, styles.defaultBorder]}
+              onPress={() => {
+                handleRemove();
+              }}
+            >
               <Text style={[styles.remove, styles.removeTypo]}>REMOVE</Text>
-            </View>
+            </Pressable>
             <Pressable
               style={[styles.defaultButtons1, styles.defaultBorder]}
-              onPress={() => {setModalVisible(false)}}
+              onPress={() => {
+                setModalVisible(false);
+              }}
             >
               <Text style={[styles.confirm, styles.removeTypo]}>CLOSE</Text>
             </Pressable>

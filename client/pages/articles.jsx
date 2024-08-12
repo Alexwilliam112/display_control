@@ -84,6 +84,37 @@ export default ArticlePage = ({ navigation }) => {
     }
   };
 
+  const setAllColorsDisplayedToFalse = (articleId, zoneName) => {
+    const updatedArticles = articles.map((article) => {
+      if (article.article === articleId) {
+        return {
+          ...article,
+          zones: article.zones.map((zone) => {
+            if (zone.zone === zoneName) {
+              // Set all colors' displayed to false
+              const updatedColors = zone.colors.map((color) => ({
+                ...color,
+                displayed: false,
+              }));
+
+              return {
+                ...zone,
+                colors: updatedColors,
+                displayed: false,
+              };
+            }
+            return zone;
+          }),
+        };
+      }
+      return article;
+    });
+
+    setArticles(updatedArticles);
+    data = updatedArticles;
+    console.log("All colors and zone set to false");
+  };
+
   const updateColorDisplayed = (articleId, zoneName, colorName, displayed) => {
     const updatedArticles = articles.map((article) => {
       if (article.article === articleId) {
@@ -200,6 +231,7 @@ export default ArticlePage = ({ navigation }) => {
           zone={zone}
           articleId={selectedArticle}
           updateColorDisplayed={updateColorDisplayed}
+          setAllColorsDisplayedToFalse={setAllColorsDisplayedToFalse}
         />
         <LoadingModal loadingSubmit={loadingSubmit} />
 

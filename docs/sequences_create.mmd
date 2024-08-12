@@ -1,0 +1,28 @@
+
+sequenceDiagram
+    participant User
+    participant Client
+    participant API
+    participant Automation Job
+    participant Database
+
+    User->>Client: Onclick: CREATE / UPDATE Reservation
+    Client->>API: request: /reservation/validation
+    API->>Automation Job: trigger: JOB Reservation Completion
+    Automation Job->>Database: fetch approved records from "t_reservation" 
+    Database-->>Automation Job: Acknowledged: data array
+    Automation Job->>Automation Job: Script: filter all records with end_time <= now
+    Automation Job->>Database: update records from script
+    Database-->>Automation Job: Acknowledged: updated records
+    Automation Job-->>API: job completed
+    API->>Database: fetch approved records on room, phonebooth, seat from "t_reservation"
+    Database-->>API: Acknowledged: data arrays
+    API->>API: Script: validate if any approved records has room, phonebooth, seat on reservation request
+
+    alt Validation Success
+    API-->>Client: response: success
+    else Validation Failed. Item Reserved
+    API-->>Client: response: error with message
+    end
+    Client->>User: Display Message on modal
+
